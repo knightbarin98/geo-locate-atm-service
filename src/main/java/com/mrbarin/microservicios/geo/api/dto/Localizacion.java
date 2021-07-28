@@ -1,11 +1,20 @@
 
 package com.mrbarin.microservicios.geo.api.dto;
 
+import java.sql.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
 
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 @Generated("jsonschema2pojo")
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Localizacion {
 
     private Float lat;

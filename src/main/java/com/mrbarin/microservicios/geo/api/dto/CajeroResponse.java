@@ -5,7 +5,16 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
 
+import com.mrbarin.microservicios.geo.api.dto.Localizacion.LocalizacionBuilder;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 @Generated("jsonschema2pojo")
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class CajeroResponse {
 
     private Integer id;
