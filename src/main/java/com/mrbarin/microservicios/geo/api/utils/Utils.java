@@ -1,10 +1,9 @@
 package com.mrbarin.microservicios.geo.api.utils;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mrbarin.microservicios.geo.api.dto.CajeroResponse;
@@ -22,7 +21,7 @@ public class Utils {
 	
 
 	public static List<CajeroResponse> obtenerListaCajeros(String json) 
-			throws JsonMappingException, JsonProcessingException {
+			throws IOException {
 		
 		ObjectMapper objectMapper = new ObjectMapper();
 		List<CajeroResponse> cajeros = new ArrayList<>();

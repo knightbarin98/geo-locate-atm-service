@@ -14,7 +14,6 @@ import javax.net.ssl.HttpsURLConnection;
 
 import org.springframework.stereotype.Component;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.mrbarin.microservicios.geo.api.dto.CajeroLocateParams;
 import com.mrbarin.microservicios.geo.api.dto.CajeroResponse;
 import com.mrbarin.microservicios.geo.api.utils.Utils;
@@ -84,7 +83,7 @@ public class AtmLocation {
 		if(!json.isEmpty()) {
 			try {
 				cajerosResponses = Utils.obtenerListaCajeros(json);
-			} catch (JsonProcessingException e) {
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
 			

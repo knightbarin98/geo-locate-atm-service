@@ -1,7 +1,6 @@
 
 package com.mrbarin.microservicios.geo.api.dto;
 
-import java.sql.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
